@@ -22,7 +22,7 @@ Personally, I use webdav set up on an apache server. This is a good solution to 
 Because rclipboard scripts only support redirection of text strings, copying images or files is not supported. Similarly, if you have a file or image in the system clipboard and intend to use rclipboard, the content of the system clipboard will not be restored.
 
 ## Installation:
-Before installing rclipboard, make sure you have xdotool and xclip installed globally.
+Before installing rclipboard, make sure you have `xdotool` and `xclip` installed globally.
 To install them you can use:
 
 *for arch based distros:*
