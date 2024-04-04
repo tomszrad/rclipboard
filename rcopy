@@ -1,0 +1,11 @@
+#!/bin/bash
+current_dir=$(dirname "$0")
+"$current_dir/rloading" sending &
+PID=$!
+xclip -out -selection clipboard > /tmp/old_clipboard
+xclip -out -selection primary | xclip -in -selection clipboard
+source ~/.config/rclipboard/rclipboard_file_path
+xclip -out -selection clipboard > $path
+cat /tmp/old_clipboard | xclip -selection clipboard
+rm /tmp/old_clipboard
+kill $PID
